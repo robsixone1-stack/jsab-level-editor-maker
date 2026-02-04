@@ -1,0 +1,65 @@
+{
+  "name": "Example Level",
+  "settings": {
+    "lives": 3,
+    "playerSpeed": 420,
+    "dashSpeed": 1050,
+    "dashDuration": 0.14,
+    "dashCooldown": 0.50,
+    "invincibleDuringDash": true,
+    "arenaPadding": 18
+  },
+  "events": [
+    { "t": 0.50, "type": "beat", "x": 0.25, "y": 0.50, "r": 18 },
+    { "t": 1.00, "type": "beat", "x": 0.75, "y": 0.50, "r": 18 },
+
+    {
+      "t": 2.00,
+      "type": "laser",
+      "dir": "right",
+      "warn": 0.70,
+      "thickness": 18,
+      "speed": 900,
+      "length": 1600
+    },
+
+    {
+      "t": 3.20,
+      "type": "laser",
+      "dir": "down",
+      "warn": 0.70,
+      "thickness": 18,
+      "speed": 900,
+      "length": 1600
+    },
+
+    {
+      "t": 4.60,
+      "type": "bomb",
+      "x": 0.50,
+      "y": 0.30,
+      "fuse": 0.85,
+      "bullets": 18,
+      "bulletSpeed": 380,
+      "flash": true
+    },
+
+    {
+      "t": 6.20,
+      "type": "wall",
+      "side": "left",
+      "warn": 0.65,
+      "width": 220,
+      "speed": 260
+    },
+
+    {
+      "t": 7.30,
+      "type": "wall",
+      "side": "right",
+      "warn": 0.65,
+      "width": 220,
+      "speed": 260
+    }
+  ]
+}
