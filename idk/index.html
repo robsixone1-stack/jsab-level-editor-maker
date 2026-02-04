@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JSAB Level Kit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div class="row">
+      <div class="title">JSAB Level Kit</div>
+      <div class="spacer"></div>
+      <button id="restartBtn">Restart</button>
+    </div>
+
+    <div class="row small">
+      <div>Level: <span id="levelName">...</span></div>
+      <div class="spacer"></div>
+      <div>Time: <span id="timeText">0.00</span>s</div>
+      <div class="pad"></div>
+      <div>Lives: <span id="livesText">3</span></div>
+    </div>
+
+    <div class="row small">
+      <div>Move: WASD / Arrow Keys</div>
+      <div class="spacer"></div>
+      <div>Dash: Space</div>
+    </div>
+
+    <div class="row small">
+      <label>Load Level JSON:</label>
+      <input id="levelFile" type="file" accept=".json" />
+      <div class="spacer"></div>
+      <button id="loadExampleBtn">Load Example</button>
+    </div>
+  </div>
+
+  <canvas id="game"></canvas>
+
+  <script src="game.js"></script>
+</body>
+</html>
